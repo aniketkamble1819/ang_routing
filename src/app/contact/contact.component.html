@@ -1,0 +1,17 @@
+<p>contact works!</p>
+
+<h3>Enter your name</h3>
+<input type="text" [(ngModel)]="name" maxlength="20">
+<h3>Mobile no</h3>
+<input type="text" [(ngModel)]="mobi" max="10">
+<button (click)="add()">submit</button>
+{{name}}
+{{mobi}}
+
+<ul class="d-inline ">
+    <li *ngFor="let name of names" >{{name}}</li>
+</ul>
+
+<ul class="d-inline">
+    <li *ngFor="let mobi of mobiles" >{{mobi}}</li>
+</ul>
